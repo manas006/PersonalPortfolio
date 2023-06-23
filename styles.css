@@ -1,0 +1,349 @@
+/* Apply styles to the entire website */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Reset some default browser styles */
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply styles to the navigation */
+nav {
+  background-color: #c7395f;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #666;
+}
+
+nav a.active {
+  background-color: #666;
+}
+
+/* Apply styles to the sections */
+section {
+  padding: 60px 40px;
+}
+
+section h2 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Apply styles to the home section */
+#home {
+  text-align: center;
+  background-color: #81cad6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home .hero {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#home h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#home p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+#home .cta-button {
+  display: inline-block;
+  background-color: #ff6f00;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#home .cta-button:hover {
+  background-color: #e65100;
+}
+
+/* Apply styles to the work section */
+#work {
+  background-color: #d49bae;
+}
+
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.work-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.work-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(243, 5, 227, 0.1);
+}
+
+.work-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 13, 13, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.work-item:hover::before {
+  opacity: 0.7;
+}
+
+.work-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+}
+
+.work-item:hover .work-item-content {
+  transform: translateY(0);
+}
+
+.work-item h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.work-item p {
+  margin-bottom: 0;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Apply styles to the blog section */
+#blog {
+  background-color: #678cec;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.blog-post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  color: #666;
+}
+
+/* Apply styles to the CV section */
+#cv {
+  background-color: #fff;
+}
+
+.cv-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cv-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cv-content h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.cv-content p {
+  margin-bottom: 5px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.cv-content ul {
+  list-style-type: none;
+  margin-left: 20px;
+  padding-left: 10px;
+  color: #666;
+}
+
+.cv-content li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Apply styles to the contact section */
+#contact {
+  background-color: #678cec;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e65100;
+}
+
+/* Apply styles to the footer */
+footer {
+  background-color: #c7395f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Additional Beautiful Features */
+.work-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.work-item:hover::after {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.blog-post {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog-post:hover::before {
+  opacity: 0.7;
+}
+
+.contact-form input,
+.contact-form textarea {
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff6f00;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
