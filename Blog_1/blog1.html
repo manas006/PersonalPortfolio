@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Taking Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Data Tidying</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Introduction:</h1>
+        <p>
+          Data tidying, also known as <em>data cleaning</em> or
+          <em>data preprocessing</em>, is the process of organizing and
+          structuring raw data into a clean, consistent, and usable format. By
+          transforming data from its original form into a more manageable
+          format, data tidying facilitates analysis, visualization, and overall
+          data utilization.
+        </p>
+        <br />
+        <img src="TidyData.jpg" class="responsive-image"alt="Tidying Data" />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>I. The Need for Data Tidying:</h2>
+        <div class="sub-section">
+          <h3>A. Scattered Information:</h3>
+          <p>
+            Imagine a pile of scattered papers containing people's names, ages,
+            and favorite books.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>B. Data Challenges:</h3>
+          <p>
+            The papers may have different formats, missing or inconsistent
+            information, or be difficult to interpret.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>C. Purpose of Data Tidying:</h3>
+          <p>
+            Data tidying aims to organize and rearrange information in a
+            standardized and organized manner for better understanding and
+            usability.
+          </p>
+        </div>
+
+        <h2>II. Principles of Data Tidying:</h2>
+        <div class="sub-section">
+          <h3>A. Each Variable in Its Own Column:</h3>
+          <p>
+            1. Importance: Each type of information (e.g., names, ages, favorite
+            books) should have a dedicated column in a structured table or
+            spreadsheet.
+          </p>
+          <p>
+            2. Benefits: Enables easier sorting, filtering, and analysis of
+            specific variables.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>B. Each Observation in Its Own Row:</h3>
+          <p>
+            1. Significance: Each instance or individual being recorded should
+            have its own dedicated row in the table.
+          </p>
+          <p>
+            2. Purpose: Ensures each unique piece of information is captured
+            separately and can be analyzed independently.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>C. Consistent Variable Names:</h3>
+          <p>
+            1. Role: Assigning clear and meaningful names to variables maintains
+            consistency throughout the dataset.
+          </p>
+          <p>
+            2. Guidelines: Variable names should be descriptive, concise, and
+            follow a standard naming convention.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>D. Handling Missing Data:</h3>
+          <p>
+            1. Importance: Data tidying involves addressing missing or
+            incomplete information.
+          </p>
+          <p>
+            2. Strategies: May include imputation (estimating missing values
+            based on available data) or marking missing values for further
+            analysis.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>E. Removing Duplicates:</h3>
+          <p>
+            1. Concerns: Data tidying involves identifying and removing or
+            handling duplicate records.
+          </p>
+          <p>
+            2. Objective: Ensures data accuracy by eliminating multiple entries
+            of the same data point.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>F. Addressing Inconsistencies:</h3>
+          <p>
+            1. Role: Data tidying includes identifying and resolving
+            inconsistencies or errors in the data.
+          </p>
+          <p>
+            2. Actions: Correcting typographical errors, standardizing formats,
+            and resolving conflicting information are necessary steps.
+          </p>
+        </div>
+
+        <h2>III. Benefits of Data Tidying:</h2>
+        <div class="sub-section">
+          <h3>A. Enhanced Analysis:</h3>
+          <p>
+            Transforms raw data into a clean and structured format for easier
+            analysis.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>B. Improved Visualization:</h3>
+          <p>
+            Facilitates data visualization by providing a well-organized
+            dataset.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>C. Data Exploration and Modeling:</h3>
+          <p>
+            Enables further exploration and modeling by providing reliable and
+            organized data.
+          </p>
+        </div>
+        <div class="sub-section">
+          <h3>D. Accurate Insights:</h3>
+          <p>
+            With organized and reliable data, analysts can derive more accurate
+            and meaningful insights.
+          </p>
+        </div>
+
+        <h1>Conclusion:</h1>
+        <p>
+          Data tidying plays a crucial role in organizing and structuring raw
+          data into a clean and usable format. By adhering to the principles of
+          data tidying, analysts can work with reliable and organized data,
+          leading to more accurate and insightful data analysis processes.
+        </p>
+        <br />
+        <hr />
+        <br />
+      </div>
+      <div class="container">
+        <h2>
+          Type of Data Tidying: <span class="highlight">Missing Data</span>
+        </h2>
+        <br />
+        <h3>Before Data Tidying:</h3>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Favorite Book</th>
+          </tr>
+          <tr>
+            <td>Alice</td>
+            <td>30</td>
+            <td>Pride &amp; Prejudice</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td><span class="error">NA</span></td>
+            <td>To Kill a Mockingbird</td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td>25</td>
+            <td><span class="error">NA</span></td>
+          </tr>
+          <tr>
+            <td>David</td>
+            <td>40</td>
+            <td>The Great Gatsby</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>35</td>
+            <td><span class="error">NA</span></td>
+          </tr>
+        </table>
+        <br />
+        <h3>After Data Tidying:</h3>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Favorite Book</th>
+          </tr>
+          <tr>
+            <td>Alice</td>
+            <td>30</td>
+            <td>Pride &amp; Prejudice</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td><span class="correct">28</span></td>
+            <td>To Kill a Mockingbird</td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td>25</td>
+            <td><span class="correct">Crime and Punishment</span></td>
+          </tr>
+          <tr>
+            <td>David</td>
+            <td>40</td>
+            <td>The Great Gatsby</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>35</td>
+            <td><span class="correct">Crime and Punishment</span></td>
+          </tr>
+        </table>
+        <br />
+        <h3>R Code for Data Tidying:</h3>
+        <pre>
+          <code class="language-r">
+          <span class="comment"># Create a data frame with duplicate records</span>
+          <span class="keyword">data</span> &lt;- data.frame(
+            <span class="attribute">Name</span> = c(<span class="string">"Alice"</span>, <span class="string">"Bob"</span>, <span class="string">"Alice"</span>, <span class="string">"Charlie"</span>, <span class="string">"David"</span>, <span class="string">"Eve"</span>),
+            <span class="attribute">Age</span> = c(30, 28, 30, 25, 40, 35),
+            <span class="attribute">Favorite_Book</span> = c(<span class="string">"Pride &amp; Prejudice"</span>, <span class="string">"To Kill a Mockingbird"</span>, <span class="string">"Pride &amp; Prejudice"</span>, <span class="string">"Harry Potter"</span>, <span class="string">"The Great Gatsby"</span>, <span class="string">"Crime and Punishment"</span>),
+            <span class="attribute">stringsAsFactors</span> = FALSE
+          )
+          
+          <span class="comment"># Remove duplicate records</span>
+          <span class="keyword">data</span> &lt;- data[!<span class="function">duplicated</span>(data), ]
+          
+          <span class="comment"># Print the tidied data</span>
+          <span class="function">print</span>(data)
+          </code>
+          </pre>
+      </div>
+      <br />
+      <br />
+      <div class="container">
+        <h2>
+          Type of Data Tidying:
+          <span class="highlight">Removing Duplicates</span>
+        </h2>
+        <br />
+        <h3>Before Data Tidying:</h3>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Favorite Book</th>
+          </tr>
+          <tr>
+            <td>Alice</td>
+            <td>30</td>
+            <td>Pride &amp; Prejudice</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>28</td>
+            <td>To Kill a Mockingbird</td>
+          </tr>
+          <tr>
+            <td><span class="error">Alice</span</td>
+            <td><span class="error">30</span></td>
+            <td><span class="error">Pride &amp; Prejudice</span></td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td>25</td>
+            <td>Harry Potter</td>
+          </tr>
+          <tr>
+            <td>David</td>
+            <td>40</td>
+            <td>The Great Gatsby</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>35</td>
+            <td>Crime and Punishment</td>
+          </tr>
+        </table>
+        <br />
+        <h3>After Data Tidying:</h3>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Favorite Book</th>
+          </tr>
+          <tr>
+            <td>Alice</td>
+            <td>30</td>
+            <td>Pride &amp; Prejudice</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>28</td>
+            <td>To Kill a Mockingbird</td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td>25</td>
+            <td>Harry Potter</td>
+          </tr>
+          <tr>
+            <td>David</td>
+            <td>40</td>
+            <td>The Great Gatsby</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>35</td>
+            <td>Crime and Punishment</td>
+          </tr>
+        </table>
+        <br />
+        <h3>R Code for Data Tidying:</h3>
+        <pre>
+            <code class="language-r">
+              <span class="comment"># Create a data frame with duplicate records</span>
+              <span class="keyword">data</span> &lt;- data.frame(
+                <span class="attribute">Name</span> = c(<span class="string">"Alice"</span>, <span class="string">"Bob"</span>, <span class="string">"Alice"</span>, <span class="string">"Charlie"</span>, <span class="string">"David"</span>, <span class="string">"Eve"</span>),
+                <span class="attribute">Age</span> = c(30, 28, 30, 25, 40, 35),
+                <span class="attribute">Favorite_Book</span> = c(<span class="string">"Pride &amp; Prejudice"</span>, <span class="string">"To Kill a Mockingbird"</span>, <span class="string">"Pride &amp; Prejudice"</span>, <span class="string">"Harry Potter"</span>, <span class="string">"The Great Gatsby"</span>, <span class="string">"Crime and Punishment"</span>),
+                <span class="attribute">stringsAsFactors</span> = FALSE
+              )
+          
+              <span class="comment"># Remove duplicate records</span>
+              <span class="keyword">data</span> &lt;- data[!<span class="function">duplicated</span>(data), ]
+          
+              <span class="comment"># Print the tidied data</span>
+              <span class="function">print</span>(data)
+            </code>         
+        </pre>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Manas</p>
+    </footer>
+  </body>
+</html>

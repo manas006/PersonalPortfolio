@@ -1,0 +1,212 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", Arial, sans-serif;
+  background-color: #4169e1;
+}
+
+header {
+  background-color: #ff8000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word; /* Break long words */
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.sub-section {
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+footer {
+  background-color: #ff8000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+able {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+
+pre {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: auto; /* Add overflow property */
+}
+
+code.language-r {
+  color: #333;
+}
+
+.comment {
+  color: #808080;
+  font-style: italic;
+}
+
+.keyword {
+  color: #0077b3;
+  font-weight: bold;
+}
+
+.attribute {
+  color: #0057e7;
+}
+
+.string {
+  color: #a200ff;
+}
+
+.function {
+  color: #7952b3;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.highlight {
+  background-color: #ffd700;
+  color: #333333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  background-color: #ff1e00db;
+  color: #333333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.correct {
+  background-color: #66ff00;
+  color: #333333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+/* Mobile Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
