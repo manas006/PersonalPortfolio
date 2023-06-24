@@ -13,7 +13,7 @@ ul {
 
 /* Apply styles to the navigation */
 nav {
-  background-color: #c7395f;
+  background-color: #e40641;
 }
 
 nav ul {
@@ -278,9 +278,9 @@ section h2 {
 
 /* Apply styles to the footer */
 footer {
-  background-color: #c7395f;
+  background-color: #e40641;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -318,7 +318,6 @@ footer {
 }
 
 .blog-post::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -346,6 +345,27 @@ footer {
 
 .contact-form textarea {
   resize: vertical;
+}
+
+/* Apply styles to the anchor tag */
+a.read-more-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  z-index: 1; /* Add this line to ensure the link is clickable */
+}
+
+a.read-more-link:hover {
+  background-color: #23527c;
+}
+
+a.read-more-link:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(51, 122, 183, 0.5);
 }
 
 /* Mobile Responsive Styles */
