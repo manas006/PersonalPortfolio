@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note Taking Website</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -55,7 +52,8 @@
             usability.
           </p>
         </div>
-
+<br />
+<br />
         <h2>II. Principles of Data Tidying:</h2>
         <div class="sub-section">
           <h3>A. Each Variable in Its Own Column:</h3>
@@ -125,7 +123,8 @@
             and resolving conflicting information are necessary steps.
           </p>
         </div>
-
+<br />
+<br />
         <h2>III. Benefits of Data Tidying:</h2>
         <div class="sub-section">
           <h3>A. Enhanced Analysis:</h3>
@@ -155,7 +154,8 @@
             and meaningful insights.
           </p>
         </div>
-
+        <br />
+        <br />
         <h1>Conclusion:</h1>
         <p>
           Data tidying plays a crucial role in organizing and structuring raw
@@ -167,13 +167,14 @@
         <hr />
         <br />
       </div>
-      <div class="container">
-        <h2>
+         <h2>
           Type of Data Tidying: <span class="highlight">Missing Data</span>
-        </h2>
-        <br />
-        <h3>Before Data Tidying:</h3>
-        <table>
+         </h2>
+         <br />
+      <div class="table-wrapper">
+        <div>
+         <h3>Before Data Tidying:</h3>
+         <table>
           <tr>
             <th>Name</th>
             <th>Age</th>
@@ -204,10 +205,11 @@
             <td>35</td>
             <td><span class="error">NA</span></td>
           </tr>
-        </table>
-        <br />
-        <h3>After Data Tidying:</h3>
-        <table>
+         </table>
+        </div>
+        <div>
+         <h3>After Data Tidying:</h3>
+         <table>
           <tr>
             <th>Name</th>
             <th>Age</th>
@@ -238,8 +240,11 @@
             <td>35</td>
             <td><span class="correct">Crime and Punishment</span></td>
           </tr>
-        </table>
-        <br />
+         </table>
+        </div>
+      </div>
+      <br>
+      <div>
         <h3>R Code for Data Tidying:</h3>
         <pre>
           <code class="language-r">
@@ -261,14 +266,15 @@
       </div>
       <br />
       <br />
-      <div class="container">
         <h2>
           Type of Data Tidying:
           <span class="highlight">Removing Duplicates</span>
         </h2>
         <br />
-        <h3>Before Data Tidying:</h3>
-        <table>
+      <div class="table-wrapper">
+       <div>
+         <h3>Before Data Tidying:</h3>
+         <table>
           <tr>
             <th>Name</th>
             <th>Age</th>
@@ -305,9 +311,10 @@
             <td>Crime and Punishment</td>
           </tr>
         </table>
-        <br />
-        <h3>After Data Tidying:</h3>
-        <table>
+        </div>
+        <div>
+         <h3>After Data Tidying:</h3>
+         <table>
           <tr>
             <th>Name</th>
             <th>Age</th>
@@ -339,7 +346,10 @@
             <td>Crime and Punishment</td>
           </tr>
         </table>
+        </div>
+      </div>
         <br />
+       <div>
         <h3>R Code for Data Tidying:</h3>
         <pre>
             <code class="language-r">
@@ -358,7 +368,7 @@
               <span class="function">print</span>(data)
             </code>         
         </pre>
-      </div>
+       </div>
     </main>
 
     <footer>

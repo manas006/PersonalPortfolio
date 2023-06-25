@@ -15,12 +15,13 @@ li {
 }
 
 body {
-  font-family: "Playfair Display", Arial, sans-serif;
-  background-color: #4169e1;
+  font-family: "Merriweather", Arial, sans-serif;
+  background: linear-gradient(to bottom, #e1e4e4, #544ea4);
+  background-attachment: fixed;
 }
 
 header {
-  background-color: #ff8000;
+  background-color: #23282d;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -68,7 +69,7 @@ p {
 }
 
 footer {
-  background-color: #ff8000;
+  background-color: #23282d;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -186,8 +187,14 @@ code.language-r {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.table-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
 /* Font Family */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 /* Mobile Responsive Styles */
 
